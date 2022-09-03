@@ -29,7 +29,7 @@ steps:
       echo "*********** Installing pylint ************"
       pip3 install -U pylint
       echo "*********** Checking code ************"
-      cd proyecto1_soa/pyfunction/
+      cd pyfunction/
       py main.py
 
 - id: 'tf init'
