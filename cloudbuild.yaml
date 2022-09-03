@@ -40,7 +40,7 @@ steps:
       pip3 install -U pylint
       echo "*********** Checking code ************"
       cd proyecto1_soa/pyfunction/
-      python main.py
+      py main.py
 
 - id: 'tf init'
   name: 'hashicorp/terraform:1.0.0'
