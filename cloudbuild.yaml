@@ -28,6 +28,7 @@ steps:
       pip3 install -U setuptools
       echo "*********** Installing pylint ************"
       pip3 install -U pylint
+      pip3 install -U python
       echo "*********** Checking code ************"
       cd pyfunction/
       python main.py
