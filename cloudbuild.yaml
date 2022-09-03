@@ -31,7 +31,7 @@ steps:
       pip3 install -U python
       echo "*********** Checking code ************"
       cd pyfunction/
-      python main.py
+      pylint main.py
 
 - id: 'tf init'
   name: 'hashicorp/terraform:1.0.0'
