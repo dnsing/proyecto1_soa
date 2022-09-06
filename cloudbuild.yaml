@@ -13,24 +13,7 @@
 # limitations under the License.
 
 
-steps:
-- id: 'code check'
-  name: 'alpine'
-  entrypoint: 'sh'  
-  args: 
-  - '-c'
-  - | 
-      echo "************************************"
-      echo "Checking Code in branch $BRANCH_NAME"
-      echo "************************************"
-      echo "*********** Installing pip ************"
-      apk add py3-pip
-      pip3 install -U setuptools
-      echo "*********** Installing pylint ************"
-      pip3 install -U pylint
-      echo "*********** Checking code ************"
-      cd pyfunction/
-      pylint main.py
+
 
 - id: 'tf init'
   name: 'hashicorp/terraform:1.0.0'
